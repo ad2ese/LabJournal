@@ -1,18 +1,19 @@
 ---
-title: "Lab journal"
+title: "Allison's Lab journal"
 output:
   html_document:
     toc: false
     number_sections: false
-author: "by: Your Name"
+author: "by: Allison Deese"
 bibliography: references.bib
 
 ---
 
 
-```{r, install remotely, globalsettings, echo=FALSE, warning=FALSE, results='hide'}
-# install.packages("remotes")
-#remotes::install_github("rlesur/klippy")
+```{r, install remotely, globalsettings, echo=FALSE, eval=FALSE, warning=FALSE, results='hide'}
+install.packages("remotes")
+
+remotes::install_github("rlesur/klippy")
 ``` 
 
 ```{r, globalsettings, echo=FALSE, warning=FALSE, results='hide'}
@@ -31,8 +32,8 @@ colorize <- function(x, color) {sprintf("<span style='color: %s;'>%s</span>", co
 
 ```{r klippy, echo=FALSE, include=TRUE}
 klippy::klippy(position = c('top', 'right'))
-#klippy::klippy(color = 'darkred')
-#klippy::klippy(tooltip_message = 'Click to copy', tooltip_success = 'Done')
+klippy::klippy(color = 'blue')
+klippy::klippy(tooltip_message = 'Click to copy', tooltip_success = 'Done')
 ```
 
 
@@ -46,7 +47,7 @@ klippy::klippy(position = c('top', 'right'))
 # My Lab Journal
 Last compiled on `r format(Sys.time(), '%B, %Y')`  
 
-*Describe lab journal here.*
+*This journal is for the purposes of the "From Webscraping to Social Network Analyses: Structure and Evolution of Scientific Co-publishing Networks" workshop at INSNA 2023 in Portland.*
 
 <br>
 
@@ -65,7 +66,7 @@ Use this example to journal your lab work and assignments.
 
 
 
-![](images/sciencedog.jpg)
+![](/Users/allisondonine/Desktop/sociology.jpeg)
 
 
 :::
